@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- <link href="./assets/css/style.css" rel="stylesheet"> -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"
+  ></script>
+  <link
+  rel="stylesheet"
+  href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+/>
+
     <title>It's Your Party</title>
 </head>
 <body>
-    <div id="headlines"></div>
-    <div>
-        <textarea id="userInput"></textarea>
-    </div>
-    <div>
-        <button id="searchBtn">Search</button>
-    </div>
+     <p>Date: <input type="text" id="datepicker"></p>
+     <p>Name: <input type="text" id="selectedName"></p>
+
+     <div><button id="searchBtn">SEARCH!</button></div>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
