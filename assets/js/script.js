@@ -8,7 +8,7 @@ $( function() {
   $( "#datepicker" ).datepicker({
     changeMonth: true,
     changeYear: true,
-    yearRange: '1920:2050',
+    yearRange: '1940:2023',
     onSelect: function(dateText) {
       var year = dateText.split("/")[2]
       var month = dateText.split("/")[0]
@@ -33,6 +33,8 @@ function apiRequest() {
   selectedName = $('#selectedName').val()
   console.log(`Selected Date: ${nytDate}`)
   console.log(`${selectedName}`)
+  console.log(wikiDay);
+  console.log(wikiMonth);
 
 
   var apiKey = 'tjyebbtQOUAnsp7tZpC8fCtH2pW8s3a6'
@@ -46,20 +48,53 @@ function apiRequest() {
 
     data.response.docs.map(article => {
       console.log(article.headline.main)
-      // var h1 = document.createElement('h1')
-      // h1.innerText = article.headline.main
+  //     // var h1 = document.createElement('h1')
+  //     // h1.innerText = article.headline.main
 
-      // headlineDiv.appendChild(h1);
+  //     // headlineDiv.appendChild(h1);
 
     })
 
 
-  })
+  // })
 
+  var otherRequestUrl = `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/${wikiMonth}/${wikiDay}`;
+  fetch( otherRequestUrl,
+    {
+        headers: {
+            'Authorization': 'd2ded8271ec6706b0494e89771c0a5c3',
+            'Api-User-Agent': 'ITS_YOUR_PARTY (dabbagh.zainab@gmail.com)'
+        }
+    }
+).then(response => response.json()) 
+.then (data => {
+  console.log(data);
+
+  data.births.map(famousBirths => {
+      console.log(famousBirths.text)
+    
+    
+  })
+});
+
+
+
+});
 }
 
+// let url = `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/${wikiMonth}/${wikiDay}`;
 
-
+// fetch( url,
+//     {
+//         headers: {
+//             'Authorization': 'd2ded8271ec6706b0494e89771c0a5c3',
+//             'Api-User-Agent': 'ITS_YOUR_PARTY (dabbagh.zainab@gmail.com)'
+//         }
+//     }
+// ).then(response => response.json()) 
+// .then (data => {
+//   console.log(data);
+// });
 
 
 
@@ -150,23 +185,6 @@ function apiRequest() {
 // let today = new Date();
 // let month = String(today.getMonth() + 1).padStart(2,'0');
 // let day = String(today.getDate()).padStart(2,'0');
-// let url = `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/${month}/${day}`;
-
-
-// fetch( url,
-//     {
-//         headers: {
-//             'Authorization': 'd2ded8271ec6706b0494e89771c0a5c3',
-//             'Api-User-Agent': 'ItsYourParty (dabbagh.zainab@gmail.com)'
-//         }
-//     }
-// )
-// .then(response => response.json())
-// .then(data => {
-//   console.log(data);
-// })
-
-
 
 
 
