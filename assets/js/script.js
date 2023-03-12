@@ -8,8 +8,7 @@ $( function() {
   $( "#datepicker" ).datepicker({
     changeMonth: true,
     changeYear: true,
-    yearRange: '1940:2023',
-    yearRange: '1940:2023',
+    yearRange: '1920:2050',
     onSelect: function(dateText) {
       var year = dateText.split("/")[2]
       var month = dateText.split("/")[0]
@@ -34,9 +33,6 @@ function apiRequest() {
   selectedName = $('#selectedName').val()
   console.log(`Selected Date: ${nytDate}`)
   console.log(`${selectedName}`)
-  console.log(wikiDay);
-  console.log(wikiMonth);
-
 
 
   var apiKey = 'tjyebbtQOUAnsp7tZpC8fCtH2pW8s3a6'
@@ -50,13 +46,10 @@ function apiRequest() {
 
     data.response.docs.slice(0, 3).map(article => {
       console.log(article.headline.main)
-  //     // var h1 = document.createElement('h1')
-  //     // h1.innerText = article.headline.main
-  //     // var h1 = document.createElement('h1')
-  //     // h1.innerText = article.headline.main
+      // var h1 = document.createElement('h1')
+      // h1.innerText = article.headline.main
 
-  //     // headlineDiv.appendChild(h1);
-  //     // headlineDiv.appendChild(h1);
+      // headlineDiv.appendChild(h1);
 
     })
 
