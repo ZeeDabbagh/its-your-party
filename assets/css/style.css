@@ -1,0 +1,13 @@
+a {
+    text-decoration: none;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+img {
+    display: block;
+}
