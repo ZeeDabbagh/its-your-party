@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAPPY BIRTHDAY</title>
+
+    <h1>Happy Birthday NAME!!</h1>
+
+    <script src="./assets/js/confetti.min.js"></script>
+    <script>
+      var start = () => {
+        setTimeout(function () {
+          confetti.start();
+        }, 1000);
+      };
+
+      var stop = () => {
+        setTimeout(function () {
+            confetti.stop();
+        }, 5000)
+      }
+
+      start();
+      stop();
+    </script>
+  </head>
+  <body></body>
+</html>
