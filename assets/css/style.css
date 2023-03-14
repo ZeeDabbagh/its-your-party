@@ -1,13 +1,10 @@
-a {
-    text-decoration: none;
-    display: block;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    color: #333;
-    font-weight: bold;
-    font-size: 24px;
+.hide {
+    display: none;
 }
 
-img {
-    display: block;
+#custom-bg {
+    background-image: url("../images/birthdaybg.png");
+    background-size: cover;
+    display: flex;
+    
 }
