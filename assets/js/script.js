@@ -123,6 +123,29 @@ data.births.slice(0, 3).map(selectedBirths => {
 
 });
 
+var bdayBtn = document.getElementById('bdayBtn');
+
+bdayBtn.addEventListener('click', function() {
+  document.getElementById('frontPage').classList.add('hide');
+  document.getElementById('infoPage').classList.add('hide')
+  document.getElementById('happyBirthday').classList.remove('hide');
+
+  var start = () => {
+    setTimeout(function () {
+      confetti.start();
+    }, 1000);
+  };
+
+  var stop = () => {
+    setTimeout(function () {
+        confetti.stop();
+    }, 5000)
+  }
+
+  start();
+  stop();
+})
+
 // const options = {
 // 	method: 'GET',
 // 	headers: {
