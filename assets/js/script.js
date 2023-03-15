@@ -199,9 +199,10 @@ var bdayBtn = document.getElementById('bdayBtn');
 bdayBtn.addEventListener('click', function() {
   console.log(localStorage.getItem('selectedName'))
 
+  document.getElementById('happyBirthday').classList.remove('hide');
   document.getElementById('frontPage').classList.add('hide');
   document.getElementById('infoPage').classList.add('hide')
-  document.getElementById('happyBirthday').classList.remove('hide');
+  
   var bdayName =  document.querySelector('#bdayName');
   bdayName.innerHTML = localStorage.getItem('selectedName');
   
