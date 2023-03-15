@@ -8,3 +8,20 @@
     display: flex;
     
 }
+
+.custom-header {
+    background-image: linear-gradient(to left, #efddff, #cef1ff);
+}
+
+.custom-text {
+    color: #333;
+}
+
+.custom-btn {
+    background-image: linear-gradient(to left, #efddff, #cef1ff);
+    border-radius: 20%;
+}
+
+.custom-btn:hover{
+    border-color: #CCB7E5;
+}

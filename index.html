@@ -18,8 +18,9 @@
 </head>
 
 <body>
-  <div class="vw-100 bg-dark text-white py-5">
+  <div class="vw-100 custom-text py-5 custom-header">
     <h1 class="row justify-content-center">It's Your Party</h1>
+    <h2 class="row justify-content-center">And you'll get facts if you want to</h2>
   </div>
 
   <div id="frontPage">
@@ -32,12 +33,12 @@
               history!
           </div>
           <div class="w-100 row justify-content-center" style="width: 550px">
-            <input class="col-4 mx-2 my-4" type="text" placeholder="Your First Name" required id="selectedName"/>
+            <input class="col-4 mx-2 my-4" type="text" placeholder="First Name" required id="selectedName"/>
       
-            <input class="col-4 my-4" id="datepicker" autocomplete="off" type="text" required />
+            <input class="col-4 my-4" id="datepicker" autocomplete="off" type="text" placeholder="Date of Birth" required />
       
             <div class="w-100 row justify-content-center">
-              <button class="btn btn-secondary btn-lg btn-block" id="searchBtn">CHECK IT OUT</button>
+              <button class="btn custom-btn custom-text btn-lg btn-block" id="searchBtn">CHECK IT OUT</button>
             </div>
           </div>
 
@@ -51,47 +52,51 @@
     <div>
     <h3 class="row justify-content-center my-3">Headlines from the day</h3>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row justify-content-between">
 
-        <div class="col-4" id="nytInfo0">
-
-          <h4></h4>       
-
-          <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
-            <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
-            sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
-            sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
-            veniam labore minus aliquam nesciunt voluptatem.</span>
-          </p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/images/nytlogo.jpeg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" id="nytInfo0">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="col-4" id="nytInfo1">
-
-          <h4></h4>         
-
-          <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
-            sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
-            sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
-            veniam labore minus aliquam nesciunt voluptatem.</span>
-            
-          </p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/images/nytlogo.jpeg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" id="nytInfo1">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-4" id="nytInfo2">
 
-          <h4></h4>         
-
-          <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
-            sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
-            sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
-            veniam labore minus aliquam nesciunt voluptatem.</span>
-
-            
-          </p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/images/nytlogo.jpeg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" id="nytInfo2">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -99,113 +104,177 @@
     </div>
   </div>
 <hr>
+
+<div>
+  <h3 class="row justify-content-center my-3">Also Born Today</h3>
+  <div class="container-fluid">
+    <div class="row justify-content-between">
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4" id="birthsImg0">
+            <img src="./assets/images/partyhorn.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" id="otherBirths0">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4" id="birthsImg1">
+            <img src="./assets/images/partyhorn.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" id="otherBirths1">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4" id="birthsImg2">
+            <img src="./assets/images/partyhorn.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" id="otherBirths2">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+  <hr>
   <div>
-    <h3 class="row justify-content-center my-3">Also Born Today</h3>
+    <h3 class="row justify-content-center my-3">Also Happened Today</h3>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-4">
-          <h4>Article 1</h4>
+      <div class="row justify-content-between">
 
-          <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg" width="100px"></img>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
-            sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
-            sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
-            veniam labore minus aliquam nesciunt voluptatem.
-          </p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4" id="todayImg0">
+              <img src="./assets/images/partyhorn.jpeg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" id="happenedToday0">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-4">
-          <h4>Article 1</h4>
 
-          <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg" width="100px"></img>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
-            sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
-            sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
-            veniam labore minus aliquam nesciunt voluptatem.
-          </p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4" id="todayImg1">
+              <img src="./assets/images/partyhorn.jpeg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" id="happenedToday1">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-4">
-          <h4>Article 1</h4>
 
-          <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg" width="100px"></img>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
-            sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
-            sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
-            veniam labore minus aliquam nesciunt voluptatem.
-          </p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4" id="todayImg2">
+              <img src="./assets/images/partyhorn.jpeg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" id="happenedToday2">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
 
     </div>
   </div>
   <hr>
+
   <div>
-    <h3 class="row justify-content-center my-3">Happened on this day in history</h3>
+    <h3 class="row justify-content-center my-3">Top Songs from the Day You Were Born</h3>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-4">
-          <h4>Article 1</h4>
+      <div class="row justify-content-between">
 
-          <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
-            sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
-            sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
-            veniam labore minus aliquam nesciunt voluptatem.
-          </p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/images/partyhorn.jpeg" class="img-fluid rounded-start" alt="..." id="firstImg">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" id="firstSong">Card title</h5>
+                <p class="card-text" id="firstArtist">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-4">
-          <h4>Article 1</h4>
 
-          <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
-            sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
-            sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
-            veniam labore minus aliquam nesciunt voluptatem.
-          </p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/images/partyhorn.jpeg" class="img-fluid rounded-start" alt="..." id="secondImg">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" id="secondSong">Card title</h5>
+                <p class="card-text" id="secondArtist">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-4">
-          <h4>Article 1</h4>
 
-          <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
-            sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
-            sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
-            veniam labore minus aliquam nesciunt voluptatem.
-          </p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/images/partyhorn.jpeg" class="img-fluid rounded-start" alt="..." id="thirdImg">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" id="thirdSong">Card title</h5>
+                <p class="card-text" id="thirdArtist">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
 
     </div>
   </div>
-
-  <div>
-    <h3 class="row justify-content-center my-3">TOP SONGS FROM THE DAY YOU WERE BORN</h3>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-4">
-          <h4>Song, Singer</h4>
-
-        </div>
-        <div class="col-4">
-          <h4>Song, Singer</h4>
-        </div>
-        <div class="col-4">
-          <h4>Song, Singer</h4>
-        </div>
-      </div>
-
-    </div>
+<hr>
+  <div class="row justify-content-center">
+    <button class="btn custom-btn btn-lg btn-block" id="bdayBtn"> <i class="fa-solid fa-gift"></i> Click to see the most important thing to happen on this day <i class="fa-solid fa-gift"></i></button>
   </div>
-
-  <div class="w-100 row justify-content-center">
-    <button class="btn btn-secondary btn-lg btn-block" id="bdayBtn"> <i class="fa-solid fa-gift"></i> Click to see the most important thing to happen on this day <i class="fa-solid fa-gift"></i></button>
-  </div>
-  </div>
+ 
 
   <div class="hide" id="happyBirthday">
     <h1>NAME was born on this day</h1>
