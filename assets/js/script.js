@@ -140,53 +140,53 @@ data.births.slice(0, 3).map((selectedBirths, index) => {
 
 });
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '2b7cad8979mshfa5e2dad08c6573p12d605jsn5240ab6f6aac',
-		'X-RapidAPI-Host': 'billboard-api2.p.rapidapi.com'
-	}
-};
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '2b7cad8979mshfa5e2dad08c6573p12d605jsn5240ab6f6aac',
+// 		'X-RapidAPI-Host': 'billboard-api2.p.rapidapi.com'
+// 	}
+// };
 
-fetch(`https://billboard-api2.p.rapidapi.com/hot-100?date=${billboardDate}&range=1-10`, options)
-	.then(response => response.json())
-	.then(data => {
+// fetch(`https://billboard-api2.p.rapidapi.com/hot-100?date=${billboardDate}&range=1-10`, options)
+// 	.then(response => response.json())
+// 	.then(data => {
 
-    console.log(data);
-    console.log(data.content[1].artist)  
+//     console.log(data);
+//     console.log(data.content[1].artist)  
 
 
-    var firstArtist= data.content[1].artist
-    var secondArtist = data.content[2].artist
-    var thirdArtist = data.content[3].artist
+//     var firstArtist= data.content[1].artist
+//     var secondArtist = data.content[2].artist
+//     var thirdArtist = data.content[3].artist
 
-    var firstSong = data.content[1].title
-    var secondSong = data.content[2].title
-    var thirdSong = data.content[3].title
+//     var firstSong = data.content[1].title
+//     var secondSong = data.content[2].title
+//     var thirdSong = data.content[3].title
 
-    var firstImg = data.content[1].image
-    var secondImg = data.content[2].image
-    var thirdImg = data.content[3].image
+//     var firstImg = data.content[1].image
+//     var secondImg = data.content[2].image
+//     var thirdImg = data.content[3].image
 
-    document.getElementById('firstSong').innerHTML=firstSong
-    document.getElementById('secondSong').innerHTML=secondSong
-    document.getElementById('thirdSong').innerHTML=thirdSong
+//     document.getElementById('firstSong').innerHTML=firstSong
+//     document.getElementById('secondSong').innerHTML=secondSong
+//     document.getElementById('thirdSong').innerHTML=thirdSong
 
-    document.getElementById('firstArtist').innerHTML=firstArtist
-    document.getElementById('secondArtist').innerHTML=secondArtist
-    document.getElementById('thirdArtist').innerHTML=thirdArtist
+//     document.getElementById('firstArtist').innerHTML=firstArtist
+//     document.getElementById('secondArtist').innerHTML=secondArtist
+//     document.getElementById('thirdArtist').innerHTML=thirdArtist
 
-    document.getElementById('firstImg').setAttribute('src', firstImg)
-    document.getElementById('firstImg').setAttribute('width', '200px')
-    document.getElementById('secondImg').setAttribute('src', secondImg)
-    document.getElementById('secondImg').setAttribute('width', '200px')
-    document.getElementById('thirdImg').setAttribute('src', thirdImg)
-    document.getElementById('thirdImg').setAttribute('width', '200px')
-  })
+//     document.getElementById('firstImg').setAttribute('src', firstImg)
+//     document.getElementById('firstImg').setAttribute('width', '200px')
+//     document.getElementById('secondImg').setAttribute('src', secondImg)
+//     document.getElementById('secondImg').setAttribute('width', '200px')
+//     document.getElementById('thirdImg').setAttribute('src', thirdImg)
+//     document.getElementById('thirdImg').setAttribute('width', '200px')
+//   })
     
 
 
-	.catch(err => console.error(err));
+// 	.catch(err => console.error(err));
     
 
   

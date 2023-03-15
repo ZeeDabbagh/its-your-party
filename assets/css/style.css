@@ -14,16 +14,22 @@
 }
 
 .custom-text {
-    color: #333;
+    color: #777;
+}
+
+.text-black {
+    color: #777;
 }
 
 .custom-btn {
     background-image: linear-gradient(to left, #efddff, #cef1ff);
-    border-radius: 20%;
+    color: #777;
+    width: fit-content;
 }
 
 .custom-btn:hover{
-    border-color: #CCB7E5;
+    border: solid #CCB7E5;
+    border-width: thick;
 }
 .unbold {
     font-weight: normal;
