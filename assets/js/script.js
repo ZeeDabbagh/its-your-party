@@ -1,7 +1,7 @@
 var nytDate = ""
 var wikiMonth = ""
 var wikiDay = ""
-var selectedName = ""
+var selectedName = $("#selectedName");
 var billboardDate = ""
 var apiSearchButton = document.getElementById("searchBtn")
 
@@ -23,7 +23,8 @@ $( function() {
 } );
 
 apiSearchButton.addEventListener("click", function () {
-  apiRequest()
+  apiRequest() 
+  localStorage.setItem('selectedName', $('#selectedName').val())
   localStorage.setItem('selectedName', $('#selectedName').val())
 })
 
@@ -37,7 +38,7 @@ function apiRequest() {
   // selectedName = $('#selectedName').val()
   
 
-  localStorage.setItem('selectedName', selectedName)
+  // localStorage.setItem('selectedName', selectedName)
 
 
   var nytKey = 'tjyebbtQOUAnsp7tZpC8fCtH2pW8s3a6'
@@ -197,9 +198,16 @@ var bdayBtn = document.getElementById('bdayBtn');
 
 bdayBtn.addEventListener('click', function() {
   console.log(localStorage.getItem('selectedName'))
+
   document.getElementById('frontPage').classList.add('hide');
   document.getElementById('infoPage').classList.add('hide')
   document.getElementById('happyBirthday').classList.remove('hide');
+  var bdayName =  document.querySelector('#bdayName');
+  bdayName.innerHTML = localStorage.getItem('selectedName');
+  
+  // localStorage.clear();
+ 
+  console.log(localStorage.getItem('selectedName'))
 
   var start = () => {
     setTimeout(function () {
