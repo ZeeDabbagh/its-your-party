@@ -32,7 +32,7 @@
               history!
           </div>
           <div class="w-100 row justify-content-center" style="width: 550px">
-            <input class="col-4 mx-2 my-4" type="text" placeholder="Your First Name" required id="selectedName"/>
+            <input class="col-4 mx-2 my-4" type="text" placeholder="Your First Name" required id="selectedName" autocomplete="off"/>
       
             <input class="col-4 my-4" id="datepicker" autocomplete="off" type="text" required />
       
@@ -58,7 +58,7 @@
           <h4></h4>       
 
           <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
+            <img src="./assets/images/plchlder.jpeg"></img><br>
             <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
             sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
             sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
@@ -71,7 +71,7 @@
           <h4></h4>         
 
           <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
+            <img src="./assets/images/plchlder.jpeg"></img><br>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
             sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
             sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
@@ -84,7 +84,7 @@
           <h4></h4>         
 
           <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
+            <img src="./assets/images/plchlder.jpeg"></img><br>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
             sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
             sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
@@ -107,7 +107,7 @@
           <h4>Article 1</h4>
 
           <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg" width="100px"></img>
+            <img src="./assets/images/plchlder.jpeg" width="100px"></img><br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
             sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
             sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
@@ -118,7 +118,7 @@
           <h4>Article 1</h4>
 
           <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg" width="100px"></img>
+            <img src="./assets/images/plchlder.jpeg" width="100px"></img><br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
             sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
             sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
@@ -129,7 +129,7 @@
           <h4>Article 1</h4>
 
           <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg" width="100px"></img>
+            <img src="./assets/images/plchlder.jpeg" width="100px"></img><br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
             sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
             sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
@@ -149,7 +149,7 @@
           <h4>Article 1</h4>
 
           <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
+            <img src="./assets/images/plchlder.jpeg"></img><br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
             sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
             sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
@@ -160,7 +160,7 @@
           <h4>Article 1</h4>
 
           <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
+            <img src="./assets/images/plchlder.jpeg"></img><br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
             sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
             sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
@@ -171,7 +171,7 @@
           <h4>Article 1</h4>
 
           <p style="flex-wrap: wrap;">
-            <img src="./assets/images/plchlder.jpeg"></img>
+            <img src="./assets/images/plchlder.jpeg"></img><br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur, eveniet quidem distinctio deserunt
             sunt vero porro laudantium! Ab vel quis numquam ad molestiae, adipisci delectus quae commodi, necessitatibus
             sequi dolor fugiat voluptatem! Quis, ipsum quasi officiis maxime odio possimus, alias quidem excepturi amet
@@ -207,10 +207,12 @@
   </div>
   </div>
 
-  <div class="hide" id="happyBirthday">
-    <h1>NAME was born on this day</h1>
-    <p>HAPPY BIRTHDAY!!</p>
-
+  <div class="hide conta element" id="happyBirthday" class="d-flex align-items-center justify-content-center vh-100">
+    <div  class="vertCenter">
+      <h1><span id="bdayName"></span> was born on this day</h1>
+      
+    </div>
+    <div class="vertCenter2"><h4 class="unbold">HAPPY BIRTHDAY!!</h4></div>
     <script src="./assets/js/confetti.min.js"></script>
 
   </div>

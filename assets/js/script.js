@@ -1,7 +1,7 @@
 var nytDate = ""
 var wikiMonth = ""
 var wikiDay = ""
-var selectedName = ""
+var selectedName = $("#selectedName");
 var billboardDate = ""
 var apiSearchButton = document.getElementById("searchBtn")
 
@@ -9,7 +9,7 @@ $( function() {
   $( "#datepicker" ).datepicker({
     changeMonth: true,
     changeYear: true,
-    yearRange: '1920:2050',
+    yearRange: '1940:2023',
     onSelect: function(dateText) {
       var year = dateText.split("/")[2]
       var month = dateText.split("/")[0]
@@ -23,7 +23,8 @@ $( function() {
 } );
 
 apiSearchButton.addEventListener("click", function () {
-  apiRequest(), saveName()
+  apiRequest() 
+  localStorage.setItem('selectedName', $('#selectedName').val())
 })
 
 // yyyymmdd userInput.dayjs().format('YYYYMMDD)
@@ -36,7 +37,7 @@ function apiRequest() {
   // selectedName = $('#selectedName').val()
   
 
-  localStorage.setItem('selectedName', selectedName)
+  // localStorage.setItem('selectedName', selectedName)
 
 
   var apiKey = 'tjyebbtQOUAnsp7tZpC8fCtH2pW8s3a6'
@@ -126,9 +127,16 @@ data.births.slice(0, 3).map(selectedBirths => {
 var bdayBtn = document.getElementById('bdayBtn');
 
 bdayBtn.addEventListener('click', function() {
+
   document.getElementById('frontPage').classList.add('hide');
   document.getElementById('infoPage').classList.add('hide')
   document.getElementById('happyBirthday').classList.remove('hide');
+  var bdayName =  document.querySelector('#bdayName');
+  bdayName.innerHTML = localStorage.getItem('selectedName');
+  
+  // localStorage.clear();
+ 
+  console.log(localStorage.getItem('selectedName'))
 
   var start = () => {
     setTimeout(function () {
@@ -142,16 +150,6 @@ bdayBtn.addEventListener('click', function() {
     }, 5000)
   }
 
-// Saves name to local storage and retrieves it
-function saveName(){
-  var userName = selectedName;
-  
-  // localStorage.clear();
-  localStorage.setItem('Name', selectedName);
-  console.log("Me nom is " +localStorage.getItem('Name'));
-  }
-
-  
   start();
   stop();
 })
@@ -168,17 +166,37 @@ function saveName(){
 // 	.then(response => response.json())
 // 	.then(data => {
 
-// fetch( url,
-//     {
-//         headers: {
-//             'Authorization': 'd2ded8271ec6706b0494e89771c0a5c3',
-//             'Api-User-Agent': 'ITS_YOUR_PARTY (dabbagh.zainab@gmail.com)'
-//         }
-//     }
-// ).then(response => response.json()) 
-// .then (data => {
-//   console.log(data);
-// });
+//     JSON.stringify(data)
+//     console.log(data);
+//   //   data.content.1(topSongs => {
+//   //     console.log(topSongs.title)
+    
+    
+//   // });
+
+//   })
+// 	// .catch(err => console.error(err));
+    
+
+  
+}
+
+
+
+
+// // let url = `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/${wikiMonth}/${wikiDay}`;
+
+// // fetch( url,
+// //     {
+// //         headers: {
+// //             'Authorization': 'd2ded8271ec6706b0494e89771c0a5c3',
+// //             'Api-User-Agent': 'ITS_YOUR_PARTY (dabbagh.zainab@gmail.com)'
+// //         }
+// //     }
+// // ).then(response => response.json()) 
+// // .then (data => {
+// //   console.log(data);
+// // });
 
 
 
@@ -320,4 +338,3 @@ function saveName(){
     
 // // //   })
 // // // // })
-

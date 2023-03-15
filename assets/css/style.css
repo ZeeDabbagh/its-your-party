@@ -8,3 +8,24 @@
     display: flex;
     
 }
+
+.unbold {
+    font-weight: normal;
+}
+
+
+.vertCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin-top: 20px;
+}
+  
+.vertCenter2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 80vh; */
+    margin-top: -190px;
+}
