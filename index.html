@@ -39,7 +39,7 @@
             <input class="col-4 my-4" id="datepicker" autocomplete="off" type="text" placeholder="Date of Birth" required />
       
             <div class="w-100 row justify-content-center">
-              <button class="btn custom-btn custom-text btn-lg btn-block" id="searchBtn">CHECK IT OUT</button>
+              <button class="btn custom-btn btn-lg btn-block fw-bold p-3" id="searchBtn"><i class="fa-solid fa-clock-rotate-left"></i> Go Back in Time <i class="fa-solid fa-clock-rotate-left"></i></button>
             </div>
           </div>
 
@@ -49,7 +49,7 @@
   </div>
   </div>
 
-  <div id="infoPage">
+  <div class="hide" id="infoPage">
     <div>
     <h3 class="row justify-content-center my-3">Headlines from the day</h3>
     <div class="container-fluid">
@@ -279,10 +279,10 @@
 
 <div class="hide conta element" id="happyBirthday" class="d-flex align-items-center justify-content-center vh-100">
   <div  class="vertCenter">
-    <h1><span id="bdayName"></span> was born on this day</h1>
+    <h1 class="bday-text"><span class="bday-text" id="bdayName"></span> was born on this day</h1>
     
   </div>
-  <div class="vertCenter2"><h4 class="unbold">HAPPY BIRTHDAY!!</h4></div>
+  <div class="vertCenter2"><h4 class="unbold bday-text">HAPPY BIRTHDAY!!</h4></div>
   
 
 </div>
