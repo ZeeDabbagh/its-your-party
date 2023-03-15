@@ -25,7 +25,7 @@ THEN then I am taken back to first page
 The following animation demonstrates the application functionality:
 
 <!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/images/project-1-demo.png)
+![A user clicks on slots on the color-coded calendar and edits the events.](./assets/images/project-1-demo.png)
 
 
 ## Github Pages Link
