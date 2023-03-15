@@ -14,16 +14,24 @@
 }
 
 .custom-text {
-    color: #333;
+    color: #777;
+}
+
+.text-black {
+    color: #777;
 }
 
 .custom-btn {
     background-image: linear-gradient(to left, #efddff, #cef1ff);
-    border-radius: 20%;
+    color: #777;
+    width: fit-content;
+    border: solid #ccb7e9;
+    border-width: medium;
 }
 
 .custom-btn:hover{
-    border-color: #CCB7E5;
+    border: solid #CCB7E5;
+    border-width: thick;
 }
 .unbold {
     font-weight: normal;
@@ -44,4 +52,8 @@
     justify-content: center;
     /* height: 80vh; */
     margin-top: -190px;
+}
+
+.bday-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }

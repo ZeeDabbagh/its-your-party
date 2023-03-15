@@ -28,8 +28,6 @@ apiSearchButton.addEventListener("click", function () {
   localStorage.setItem('selectedName', $('#selectedName').val())
 })
 
-// yyyymmdd userInput.dayjs().format('YYYYMMDD)
-
 
 function apiRequest() {
 
